@@ -60,7 +60,7 @@ public class CamelRouter extends RouteBuilder {
             //.to("direct:arrivalsImplLocal", "direct:departuresImplLocal");
 
             //
-            // UNCOMMENT THIS/
+            // UNCOMMENT THIS 
             .to("direct:arrivalsImplRemote", "direct:departuresImplRemote");
     
         from("direct:arrivalsImplRemote").description("Arrivals REST service implementation route")
